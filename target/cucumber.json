@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-11T22:34:15.359Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1708823000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.set()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Validate sign up page",
+        "description": "",
+        "id": "validate-elements-in-practice-page;validate-sign-up-page",
+        "after": [
+          {
+            "result": {
+              "duration": 107144000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2551026000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I navigate to \"https://learn.letskodeit.com/\" url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://learn.letskodeit.com/",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14834000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I am on the  HomePage page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HomePage",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_am_on_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111759000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on enrollNow",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enrollNow",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1144000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I am on signup page",
+            "match": {
+              "location": "stepDefs.SignUpPageStepDefs.i_am_on_signup_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000973000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I wait for 5000 miliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5000",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_wait(long)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124757000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter user name as \"test user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test user",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_name(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 97932000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter user email as  \"some@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "some@email.com",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_email(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153518000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter user password as \"somepass\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "somepass",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_password(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 199053000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I agree terms and marketing",
+            "match": {
+              "location": "stepDefs.SignUpPageStepDefs.i_agree_terms_market()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2003812000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I wait for 2000 miliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_wait(long)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.Exception: fail: signup button is false\n\tat PageFactory.SignUpPage.VerifySignup(SignUpPage.java:69)\n\tat stepDefs.SignUpPageStepDefs.i_verify_sign_up(SignUpPageStepDefs.java:41)\n\tat ✽.I verify sign up is \"enabled\"(classpath:features/PraticePageTest.feature:35)\n",
+              "duration": 54442000,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "I verify sign up is \"enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enabled",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefs.SignUpPageStepDefs.i_verify_sign_up(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signuppage"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Elements in Practice Page",
+    "description": "",
+    "id": "validate-elements-in-practice-page",
+    "keyword": "Feature",
+    "uri": "classpath:features/PraticePageTest.feature",
+    "tags": []
+  }
+]

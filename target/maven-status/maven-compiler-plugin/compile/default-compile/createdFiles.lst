@@ -1,0 +1,7 @@
+PageFactory/HomePage.class
+PageFactory/SignUpPage.class
+Utilities/AutomationContext.class
+managers/Driver.class
+Utilities/WebElementMgr.class
+managers/PageObjectMgr.class
+PageFactory/PracticePage.class

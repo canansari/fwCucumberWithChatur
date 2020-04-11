@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: testRunners.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.665 s <<< FAILURE! - in testRunners.RunCukesTest
+Validate sign up page(Validate Elements in Practice Page)  Time elapsed: 12.297 s  <<< ERROR!
+java.lang.Exception: fail: signup button is false
+

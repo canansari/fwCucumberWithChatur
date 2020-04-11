@@ -1,0 +1,4 @@
+testRunners/RunCukesTest.class
+stepDefs/CommonStepDefs.class
+stepDefs/Hooks.class
+stepDefs/SignUpPageStepDefs.class
