@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>fwtest</td>
               <td>1</td>
-            <td>11 Apr 2020, 16:34</td>
+            <td>14 Apr 2020, 15:49</td>
     </tr>
   </tbody>
 </table>
@@ -117,13 +117,14 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_classpath-features-PraticePageTest-feature.html">Validate Elements in Practice Page</a>
+      <a href="report-feature_classpath-features-commonFeature-feature.html">validate using common step definitions</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_signuppage.html">@signuppage</a>
+           <a href="report-tag_regression.html">@regression</a>
+           <a href="report-tag_coursesearchpage.html">@coursesearchpage</a>
       </div>
 
 
@@ -131,7 +132,7 @@ $(document).ready(function() {
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Validate sign up page</span>
+  <span class="name">Validate course search page</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -159,9 +160,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">stepDefs.Hooks.set()</span>
+                          <span class="location name">stepDefs.Hooks.set(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">1s 708ms</span>
+  <span class="lead-duration duration">2s 132ms</span>
 
           </div>
 
@@ -196,7 +197,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I navigate to &quot;https://learn.letskodeit.com/&quot; url</span>
   
-  <span class="lead-duration duration">2s 551ms</span>
+  <span class="lead-duration duration">1s 668ms</span>
 
   </div>
 
@@ -214,10 +215,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Then</span>
+  <span class="keyword indention">Given</span>
   <span class="name">I am on the  HomePage page</span>
   
-  <span class="lead-duration duration">014ms</span>
+  <span class="lead-duration duration">018ms</span>
 
   </div>
 
@@ -235,31 +236,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I click on enrollNow</span>
+  <span class="keyword indention">When</span>
+  <span class="name">I click on practiceBtn</span>
   
-  <span class="lead-duration duration">111ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I am on signup page</span>
-  
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">067ms</span>
 
   </div>
 
@@ -280,7 +260,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I wait for 5000 miliseconds</span>
   
-  <span class="lead-duration duration">5s</span>
+  <span class="lead-duration duration">5s 005ms</span>
 
   </div>
 
@@ -298,8 +278,207 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I enter user name as &quot;test user&quot;</span>
+  <span class="keyword indention">Then</span>
+  <span class="name">I am on the  PracticePage page</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I switch to iframeExample iframe</span>
+  
+  <span class="lead-duration duration">042ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I am on the  CourseSearchPage page</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on category</span>
+  
+  <span class="lead-duration duration">096ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on softwareTesting</span>
+  
+  <span class="lead-duration duration">1s 007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I wait for 3000 miliseconds</span>
+  
+  <span class="lead-duration duration">3s 005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I validate courses has 6 elements and print src</span>
+  
+  <span class="lead-duration duration">101ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-4" class="collapse collapsable-details">
+          <pre>Pass: There are 6 courses</pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on author</span>
+  
+  <span class="lead-duration duration">071ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I click on letsKodeIt</span>
+  
+  <span class="lead-duration duration">911ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I validate courses has 11 elements and print src</span>
   
   <span class="lead-duration duration">124ms</span>
 
@@ -312,6 +491,16 @@ $(document).ready(function() {
         
 
         
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-5" class="collapse collapsable-details">
+          <pre>Pass: There are 11 courses</pre>
+        </div>
+      </div>
+      </div>
 
         
   
@@ -320,9 +509,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I enter user email as  &quot;some@email.com&quot;</span>
+  <span class="name">I wait for 3000 miliseconds</span>
   
-  <span class="lead-duration duration">097ms</span>
+  <span class="lead-duration duration">3s</span>
 
   </div>
 
@@ -341,9 +530,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I enter user password as &quot;somepass&quot;</span>
+  <span class="name">I enter &quot;phyton&quot; in searchCourses</span>
   
-  <span class="lead-duration duration">153ms</span>
+  <span class="lead-duration duration">264ms</span>
 
   </div>
 
@@ -362,9 +551,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I agree terms and marketing</span>
+  <span class="name">I click on search</span>
   
-  <span class="lead-duration duration">199ms</span>
+  <span class="lead-duration duration">766ms</span>
 
   </div>
 
@@ -383,9 +572,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I wait for 2000 miliseconds</span>
+  <span class="name">I wait for 3000 miliseconds</span>
   
-  <span class="lead-duration duration">2s 003ms</span>
+  <span class="lead-duration duration">3s 001ms</span>
 
   </div>
 
@@ -404,9 +593,9 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">I verify sign up is &quot;enabled&quot;</span>
+  <span class="name">I validate courses has 5 elements and print src</span>
   
-  <span class="lead-duration duration">054ms</span>
+  <span class="lead-duration duration">034ms</span>
 
   </div>
 
@@ -414,14 +603,13 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Error message</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.Exception: fail: signup button is false
-	at PageFactory.SignUpPage.VerifySignup(SignUpPage.java:69)
-	at stepDefs.SignUpPageStepDefs.i_verify_sign_up(SignUpPageStepDefs.java:41)
-	at &#10045;.I verify sign up is &quot;enabled&quot;(classpath:features/PraticePageTest.feature:35)
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>java.lang.Exception: Fail: There are [] courses
+	at stepDefs.ValidationStepDefs.i_validate_list(ValidationStepDefs.java:62)
+	at &#10045;.I validate courses has 5 elements and print src(classpath:features/commonFeature.feature:64)
 </pre>
       </div>
     </div>
@@ -432,6 +620,16 @@ $(document).ready(function() {
         
 
         
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-7" class="collapse collapsable-details">
+          <pre>Fail: There are [] courses</pre>
+        </div>
+      </div>
+      </div>
 
         
   
@@ -442,7 +640,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -454,13 +652,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDefs.Hooks.tearDown()</span>
                         
-  <span class="lead-duration duration">107ms</span>
+  <span class="lead-duration duration">101ms</span>
 
           </div>
 

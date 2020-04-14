@@ -1,5 +1,7 @@
 PageFactory/HomePage.class
+Utilities/ScenarioManager.class
 PageFactory/SignUpPage.class
+PageFactory/CourseSearchPage.class
 Utilities/AutomationContext.class
 managers/Driver.class
 Utilities/WebElementMgr.class

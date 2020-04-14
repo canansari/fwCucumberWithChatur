@@ -1,4 +1,5 @@
 testRunners/RunCukesTest.class
+stepDefs/NavigationStepDefs.class
+stepDefs/ValidationStepDefs.class
 stepDefs/CommonStepDefs.class
 stepDefs/Hooks.class
-stepDefs/SignUpPageStepDefs.class

@@ -1,28 +1,28 @@
 [
   {
-    "line": 1,
+    "line": 4,
     "elements": [
       {
-        "start_timestamp": "2020-04-11T22:34:15.359Z",
+        "start_timestamp": "2020-04-14T21:49:15.819Z",
         "before": [
           {
             "result": {
-              "duration": 1708823000,
+              "duration": 2132457000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.set()"
+              "location": "stepDefs.Hooks.set(io.cucumber.java.Scenario)"
             }
           }
         ],
-        "line": 24,
-        "name": "Validate sign up page",
+        "line": 45,
+        "name": "Validate course search page",
         "description": "",
-        "id": "validate-elements-in-practice-page;validate-sign-up-page",
+        "id": "validate-using-common-step-definitions;validate-course-search-page",
         "after": [
           {
             "result": {
-              "duration": 107144000,
+              "duration": 101993000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2551026000,
+              "duration": 1668075000,
               "status": "passed"
             },
-            "line": 25,
+            "line": 46,
             "name": "I navigate to \"https://learn.letskodeit.com/\" url",
             "match": {
               "arguments": [
@@ -47,16 +47,16 @@
                   "offset": 15
                 }
               ],
-              "location": "stepDefs.CommonStepDefs.i_navigate_to_url(java.lang.String)"
+              "location": "stepDefs.NavigationStepDefs.i_navigate_to_url(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 14834000,
+              "duration": 18822000,
               "status": "passed"
             },
-            "line": 26,
+            "line": 47,
             "name": "I am on the  HomePage page",
             "match": {
               "arguments": [
@@ -65,21 +65,111 @@
                   "offset": 13
                 }
               ],
-              "location": "stepDefs.CommonStepDefs.i_am_on_page(java.lang.String)"
+              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67717000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on practiceBtn",
+            "match": {
+              "arguments": [
+                {
+                  "val": "practiceBtn",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5005152000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I wait for 5000 miliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5000",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 111759000,
+              "duration": 1651000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "I click on enrollNow",
+            "line": 50,
+            "name": "I am on the  PracticePage page",
             "match": {
               "arguments": [
                 {
-                  "val": "enrollNow",
+                  "val": "PracticePage",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42091000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I switch to iframeExample iframe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "iframeExample",
+                  "offset": 12
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_switch_to_frame(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8588000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I am on the  CourseSearchPage page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CourseSearchPage",
+                  "offset": 13
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96440000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I click on category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "category",
                   "offset": 11
                 }
               ],
@@ -89,150 +179,256 @@
           },
           {
             "result": {
-              "duration": 1144000,
+              "duration": 1007536000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "I am on signup page",
-            "match": {
-              "location": "stepDefs.SignUpPageStepDefs.i_am_on_signup_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5000973000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I wait for 5000 miliseconds",
+            "line": 54,
+            "name": "I click on softwareTesting",
             "match": {
               "arguments": [
                 {
-                  "val": "5000",
+                  "val": "softwareTesting",
                   "offset": 11
                 }
               ],
-              "location": "stepDefs.CommonStepDefs.i_wait(long)"
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 124757000,
+              "duration": 3005146000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "I enter user name as \"test user\"",
+            "line": 55,
+            "name": "I wait for 3000 miliseconds",
             "match": {
               "arguments": [
                 {
-                  "val": "test user",
-                  "offset": 22
-                }
-              ],
-              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_name(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 97932000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I enter user email as  \"some@email.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "some@email.com",
-                  "offset": 24
-                }
-              ],
-              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_email(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 153518000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I enter user password as \"somepass\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "somepass",
-                  "offset": 26
-                }
-              ],
-              "location": "stepDefs.SignUpPageStepDefs.i_enter_user_password(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 199053000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I agree terms and marketing",
-            "match": {
-              "location": "stepDefs.SignUpPageStepDefs.i_agree_terms_market()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2003812000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I wait for 2000 miliseconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2000",
+                  "val": "3000",
                   "offset": 11
                 }
               ],
-              "location": "stepDefs.CommonStepDefs.i_wait(long)"
+              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Pass: There are 6 courses"
+            ],
+            "result": {
+              "duration": 101652000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I validate courses has 6 elements and print src",
+            "match": {
+              "arguments": [
+                {
+                  "val": "courses",
+                  "offset": 11
+                },
+                {
+                  "val": "6",
+                  "offset": 23
+                },
+                {
+                  "val": "src",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.Exception: fail: signup button is false\n\tat PageFactory.SignUpPage.VerifySignup(SignUpPage.java:69)\n\tat stepDefs.SignUpPageStepDefs.i_verify_sign_up(SignUpPageStepDefs.java:41)\n\tat ✽.I verify sign up is \"enabled\"(classpath:features/PraticePageTest.feature:35)\n",
-              "duration": 54442000,
+              "duration": 71198000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I click on author",
+            "match": {
+              "arguments": [
+                {
+                  "val": "author",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 911899000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on letsKodeIt",
+            "match": {
+              "arguments": [
+                {
+                  "val": "letsKodeIt",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Pass: There are 11 courses"
+            ],
+            "result": {
+              "duration": 124846000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I validate courses has 11 elements and print src",
+            "match": {
+              "arguments": [
+                {
+                  "val": "courses",
+                  "offset": 11
+                },
+                {
+                  "val": "11",
+                  "offset": 23
+                },
+                {
+                  "val": "src",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000482000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I wait for 3000 miliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 264227000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I enter \"phyton\" in searchCourses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phyton",
+                  "offset": 9
+                },
+                {
+                  "val": "searchCourses",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_enter_given_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 766439000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I click on search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3001281000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I wait for 3000 miliseconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3000",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Fail: There are [] courses"
+            ],
+            "result": {
+              "error_message": "java.lang.Exception: Fail: There are [] courses\n\tat stepDefs.ValidationStepDefs.i_validate_list(ValidationStepDefs.java:62)\n\tat ✽.I validate courses has 5 elements and print src(classpath:features/commonFeature.feature:64)\n",
+              "duration": 34212000,
               "status": "failed"
             },
-            "line": 35,
-            "name": "I verify sign up is \"enabled\"",
+            "line": 64,
+            "name": "I validate courses has 5 elements and print src",
             "match": {
               "arguments": [
                 {
-                  "val": "enabled",
-                  "offset": 21
+                  "val": "courses",
+                  "offset": 11
+                },
+                {
+                  "val": "5",
+                  "offset": 23
+                },
+                {
+                  "val": "src",
+                  "offset": 44
                 }
               ],
-              "location": "stepDefs.SignUpPageStepDefs.i_verify_sign_up(java.lang.String)"
+              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@signuppage"
+            "name": "@regression"
+          },
+          {
+            "name": "@coursesearchpage"
           }
         ]
       }
     ],
-    "name": "Validate Elements in Practice Page",
+    "name": "validate using common step definitions",
     "description": "",
-    "id": "validate-elements-in-practice-page",
+    "id": "validate-using-common-step-definitions",
     "keyword": "Feature",
-    "uri": "classpath:features/PraticePageTest.feature",
+    "uri": "classpath:features/commonFeature.feature",
     "tags": []
   }
 ]

@@ -10,35 +10,38 @@ public class Driver {
     private static WebDriver driver;
 
     public static WebDriver getDriver(){
-        String browserName=System.getProperty("browser");
-        String browserVersion=System.getProperty("browserVersion");
-
         if(driver==null) {
-            switch(browserName){
-                case "chrome":
-                    if(!browserVersion.equals("")){
-                        WebDriverManager.chromedriver().version(browserVersion).setup();
-                    } else WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                    break;
-
-                case "firefox":
-                    if(!browserVersion.equals("")){
-                        WebDriverManager.firefoxdriver().version(browserVersion).setup();
-                    }else WebDriverManager.firefoxdriver().setup();
-                    driver=new FirefoxDriver();
-                    break;
-
-                case "opera":
-                    if(!browserVersion.equals("")){
-                        WebDriverManager.operadriver().version(browserVersion).setup();
-                    }else WebDriverManager.operadriver().setup();
-                    driver=new OperaDriver();
-                    break;
-            }
-
+            initializeDriver();
         }
         return driver;
 
     }
+    public static void initializeDriver(){
+        String browserName=System.getProperty("browser");
+        String browserVersion=System.getProperty("browserVersion");
+
+        switch(browserName){
+            case "chrome":
+                if(!browserVersion.equals("")){
+                    WebDriverManager.chromedriver().version(browserVersion).setup();
+                } else WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
+                break;
+
+            case "firefox":
+                if(!browserVersion.equals("")){
+                    WebDriverManager.firefoxdriver().version(browserVersion).setup();
+                }else WebDriverManager.firefoxdriver().setup();
+                driver=new FirefoxDriver();
+                break;
+
+            case "opera":
+                if(!browserVersion.equals("")){
+                    WebDriverManager.operadriver().version(browserVersion).setup();
+                }else WebDriverManager.operadriver().setup();
+                driver=new OperaDriver();
+                break;
+        }
+    }
+
 }

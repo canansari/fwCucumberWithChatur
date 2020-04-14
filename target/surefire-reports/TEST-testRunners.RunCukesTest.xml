@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testRunners.RunCukesTest" time="12.665" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testRunners.RunCukesTest" time="21.925" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/canansaricelik/IdeaProjects/fwtest/target/surefire/surefirebooter10293659041509095014.jar /Users/canansaricelik/IdeaProjects/fwtest/target/surefire 2020-04-11T16-34-14_586-jvmRun1 surefire8124565594241133381tmp surefire_07726717121005174135tmp"/>
+    <property name="sun.java.command" value="/Users/canansaricelik/IdeaProjects/fwtest/target/surefire/surefirebooter5075055108255896740.jar /Users/canansaricelik/IdeaProjects/fwtest/target/surefire 2020-04-14T15-49-15_084-jvmRun1 surefire10612954066090909296tmp surefire_014907262006853996784tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/canansaricelik/IdeaProjects/fwtest/target/test-classes:/Users/canansaricelik/IdeaProjects/fwtest/target/classes:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/canansaricelik/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/canansaricelik/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/canansaricelik/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/canansaricelik/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/canansaricelik/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/canansaricelik/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/canansaricelik/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/canansaricelik/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/canansaricelik/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/canansaricelik/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/canansaricelik/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-junit/5.6.0/cucumber-junit-5.6.0.jar:/Users/canansaricelik/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-core/5.6.0/cucumber-core-5.6.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-gherkin/5.6.0/cucumber-gherkin-5.6.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.6.0/cucumber-gherkin-vintage-5.6.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/canansaricelik/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-plugin/5.6.0/cucumber-plugin-5.6.0.jar:/Users/canansaricelik/.m2/repository/io/cucumber/docstring/5.6.0/docstring-5.6.0.jar:/Users/canansaricelik/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/canansaricelik/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-java/5.6.0/cucumber-java-5.6.0.jar:/Users/canansaricelik/.m2/repository/io/github/bonigarcia/webdrivermanager/3.8.1/webdrivermanager-3.8.1.jar:/Users/canansaricelik/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/canansaricelik/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/canansaricelik/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/canansaricelik/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/canansaricelik/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/canansaricelik/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/canansaricelik/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/canansaricelik/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/canansaricelik/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/canansaricelik/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/canansaricelik/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/canansaricelik/.m2/repository/io/cucumber/cucumber-picocontainer/5.6.0/cucumber-picocontainer-5.6.0.jar:/Users/canansaricelik/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/canansaricelik/IdeaProjects/fwtest/target/surefire/surefirebooter10293659041509095014.jar"/>
+    <property name="surefire.real.class.path" value="/Users/canansaricelik/IdeaProjects/fwtest/target/surefire/surefirebooter5075055108255896740.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
@@ -41,7 +41,7 @@
     <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="localRepository" value="/Users/canansaricelik/.m2/repository"/>
-    <property name="cucumber.options" value="--tags @signuppage"/>
+    <property name="cucumber.options" value="--tags @coursesearchpage"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/_8/7d9t8wk94670bydg6grgxhtw0000gn/T/"/>
     <property name="java.version" value="13.0.2"/>
@@ -56,51 +56,99 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Validate sign up page" classname="Validate Elements in Practice Page" time="12.297">
-    <error message="fail: signup button is false" type="java.lang.Exception">java.lang.Exception: fail: signup button is false
+  <testcase name="Validate course search page" classname="validate using common step definitions" time="21.577">
+    <error message="Fail: There are [] courses" type="java.lang.Exception">java.lang.Exception: Fail: There are [] courses
 </error>
     <system-out><![CDATA[
-@signuppage
-Scenario: Validate sign up page                           &amp#27;[90m# features/PraticePageTest.feature:24&amp#27;[0m
+@regression @coursesearchpage
+Scenario: Validate course search page                     &amp#27;[90m# features/commonFeature.feature:45&amp#27;[0m
 Window Title: Home | Let's Kode It
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI navigate to "&amp#27;[0m&amp#27;[32m&amp#27;[1mhttps://learn.letskodeit.com/&amp#27;[0m&amp#27;[32m" url&amp#27;[0m &amp#27;[90m# stepDefs.CommonStepDefs.i_navigate_to_url(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI am on the  &amp#27;[0m&amp#27;[32m&amp#27;[1mHomePage&amp#27;[0m&amp#27;[32m page&amp#27;[0m                         &amp#27;[90m# stepDefs.CommonStepDefs.i_am_on_page(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1menrollNow&amp#27;[0m                               &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI am on signup page&amp#27;[0m                                &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_am_on_signup_page()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m5000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.CommonStepDefs.i_wait(long)&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI enter user name as "&amp#27;[0m&amp#27;[32m&amp#27;[1mtest user&amp#27;[0m&amp#27;[32m"&amp#27;[0m                  &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_enter_user_name(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI enter user email as  "&amp#27;[0m&amp#27;[32m&amp#27;[1msome@email.com&amp#27;[0m&amp#27;[32m"&amp#27;[0m            &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_enter_user_email(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI enter user password as "&amp#27;[0m&amp#27;[32m&amp#27;[1msomepass&amp#27;[0m&amp#27;[32m"&amp#27;[0m                &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_enter_user_password(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI agree terms and marketing&amp#27;[0m                        &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_agree_terms_market()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m2000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.CommonStepDefs.i_wait(long)&amp#27;[0m
-fail: signup button is false
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI verify sign up is "&amp#27;[0m&amp#27;[31m&amp#27;[1menabled&amp#27;[0m&amp#27;[31m"&amp#27;[0m                      &amp#27;[90m# stepDefs.SignUpPageStepDefs.i_verify_sign_up(java.lang.String)&amp#27;[0m
-      &amp#27;[31mjava.lang.Exception: fail: signup button is false
-	at PageFactory.SignUpPage.VerifySignup(SignUpPage.java:69)
-	at stepDefs.SignUpPageStepDefs.i_verify_sign_up(SignUpPageStepDefs.java:41)
-	at ✽.I verify sign up is "enabled"(classpath:features/PraticePageTest.feature:35)
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI navigate to "&amp#27;[0m&amp#27;[32m&amp#27;[1mhttps://learn.letskodeit.com/&amp#27;[0m&amp#27;[32m" url&amp#27;[0m &amp#27;[90m# stepDefs.NavigationStepDefs.i_navigate_to_url(java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am on the  &amp#27;[0m&amp#27;[32m&amp#27;[1mHomePage&amp#27;[0m&amp#27;[32m page&amp#27;[0m                        &amp#27;[90m# stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1mpracticeBtn&amp#27;[0m                             &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m5000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.NavigationStepDefs.i_wait(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI am on the  &amp#27;[0m&amp#27;[32m&amp#27;[1mPracticePage&amp#27;[0m&amp#27;[32m page&amp#27;[0m                     &amp#27;[90m# stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI switch to &amp#27;[0m&amp#27;[32m&amp#27;[1miframeExample&amp#27;[0m&amp#27;[32m iframe&amp#27;[0m                   &amp#27;[90m# stepDefs.NavigationStepDefs.i_switch_to_frame(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI am on the  &amp#27;[0m&amp#27;[32m&amp#27;[1mCourseSearchPage&amp#27;[0m&amp#27;[32m page&amp#27;[0m                 &amp#27;[90m# stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1mcategory&amp#27;[0m                                &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1msoftwareTesting&amp#27;[0m                         &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m3000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.NavigationStepDefs.i_wait(long)&amp#27;[0m
+
+    Pass: There are 6 courses
+
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://udemy-images.udemy.com/course/750x422/246652_50e9_4.jpg
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/pPCFCZmTUCUGOqcK7NWA
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/T0by12FATbSQ0MkBQ0dI
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/jEsN8sueQE2rsbIxttrn
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/k0Zs9NXQFOMUfPIWFAPH
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/ffSNaDKyRmmowXMUVJE0
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI validate &amp#27;[0m&amp#27;[32m&amp#27;[1mcourses&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1m6&amp#27;[0m&amp#27;[32m elements and print &amp#27;[0m&amp#27;[32m&amp#27;[1msrc&amp#27;[0m    &amp#27;[90m# stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1mauthor&amp#27;[0m                                  &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1mletsKodeIt&amp#27;[0m                              &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+
+    Pass: There are 11 courses
+
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://udemy-images.udemy.com/course/750x422/246652_50e9_4.jpg
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/aluPFu8SVWZt2lYDfX2N
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://udemy-images.udemy.com/course/750x422/696044_3010_4.jpg
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://udemy-images.udemy.com/course/750x422/495678_1e6a_3.jpg
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://udemy-images.udemy.com/course/750x422/635450_59af_3.jpg
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/mc1azfz9Qnmm2v0OBROy
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/pPCFCZmTUCUGOqcK7NWA
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/T0by12FATbSQ0MkBQ0dI
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/jEsN8sueQE2rsbIxttrn
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/k0Zs9NXQFOMUfPIWFAPH
+https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/ffSNaDKyRmmowXMUVJE0
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI validate &amp#27;[0m&amp#27;[32m&amp#27;[1mcourses&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1m11&amp#27;[0m&amp#27;[32m elements and print &amp#27;[0m&amp#27;[32m&amp#27;[1msrc&amp#27;[0m   &amp#27;[90m# stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m3000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.NavigationStepDefs.i_wait(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI enter "&amp#27;[0m&amp#27;[32m&amp#27;[1mphyton&amp#27;[0m&amp#27;[32m" in &amp#27;[0m&amp#27;[32m&amp#27;[1msearchCourses&amp#27;[0m                  &amp#27;[90m# stepDefs.CommonStepDefs.i_enter_given_value(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click on &amp#27;[0m&amp#27;[32m&amp#27;[1msearch&amp#27;[0m                                  &amp#27;[90m# stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI wait for &amp#27;[0m&amp#27;[32m&amp#27;[1m3000&amp#27;[0m&amp#27;[32m miliseconds&amp#27;[0m                        &amp#27;[90m# stepDefs.NavigationStepDefs.i_wait(long)&amp#27;[0m
+
+    Fail: There are [] courses
+
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI validate &amp#27;[0m&amp#27;[31m&amp#27;[1mcourses&amp#27;[0m&amp#27;[31m has &amp#27;[0m&amp#27;[31m&amp#27;[1m5&amp#27;[0m&amp#27;[31m elements and print &amp#27;[0m&amp#27;[31m&amp#27;[1msrc&amp#27;[0m    &amp#27;[90m# stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.Exception: Fail: There are [] courses
+	at stepDefs.ValidationStepDefs.i_validate_list(ValidationStepDefs.java:62)
+	at ✽.I validate courses has 5 elements and print src(classpath:features/commonFeature.feature:64)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Apr 11, 2020 4:34:15 PM io.cucumber.core.options.CucumberPropertiesParser parse
+    <system-err><![CDATA[Apr 14, 2020 3:49:15 PM io.cucumber.core.options.CucumberPropertiesParser parse
 WARNING: Passing commandline options via the property `cucumber.options` has been deprecatedin favour of explicitly using property names.
 Please use these instead: [cucumber.ansi-colors.disabled, cucumber.execution.dry-run, cucumber.execution.limit, cucumber.execution.order, cucumber.execution.strict, cucumber.execution.wip, cucumber.features, cucumber.filter.name, cucumber.filter.tags, cucumber.glue, cucumber.object-factory, cucumber.plugin, cucumber.snippet-type]
-Apr 11, 2020 4:34:15 PM io.cucumber.junit.Cucumber <init>
+Apr 14, 2020 3:49:15 PM io.cucumber.junit.Cucumber <init>
 WARNING: By default Cucumber is running in --non-strict mode.
 This default will change to --strict and --non-strict will be removed.
 You can use --strict or @CucumberOptions(strict = true) to suppress this warning
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 7538
+Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 24152
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Apr 11, 2020 4:34:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 14, 2020 3:49:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-[1586644458.763][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586644458.865][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586644459.168][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586644459.445][SEVERE]: Timed out receiving message from renderer: 0.100
-[1586644459.547][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900958.666][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900958.767][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900959.421][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900959.522][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.138][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.240][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.343][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.446][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.548][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900965.651][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.273][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.376][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.478][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.581][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.683][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900969.786][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900973.567][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900973.670][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900973.772][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900973.875][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586900973.977][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
   </testcase>
 </testsuite>
