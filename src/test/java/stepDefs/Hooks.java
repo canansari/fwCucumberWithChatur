@@ -1,30 +1,30 @@
 package stepDefs;
 
-import PageFactory.HomePage;
-import PageFactory.PracticePage;
 import Utilities.AutomationContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import managers.Driver;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
     AutomationContext context;
+    String platform;
 
     public Hooks(AutomationContext context){
+
         this.context=context;
+        platform=context.getContextCache("platform");
     }
 
 
     @Before
     public void set(Scenario scenario){
+        Driver.setBrowserNmVersion(context.getConfigFileReader().getPropertyValue("browser"), context.getConfigFileReader().getPropertyValue("browserVersion"));
+        if(platform.equalsIgnoreCase("web")){
+
+        }
         Driver.initializeDriver();
         context.getScenarioManager().setScenario(scenario);
         Driver.getDriver().manage().window().maximize();
@@ -32,8 +32,14 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(){
+    public void tearDown(Scenario scenario){
+        if(scenario.isFailed()){
+            byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot, "image/jpeg", "failure_image");
+        }
+
         Driver.getDriver().quit();
     }
+
 
 }

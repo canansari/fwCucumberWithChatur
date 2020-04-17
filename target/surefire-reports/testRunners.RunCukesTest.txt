@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: testRunners.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.925 s <<< FAILURE! - in testRunners.RunCukesTest
-Validate course search page(validate using common step definitions)  Time elapsed: 21.577 s  <<< ERROR!
-java.lang.Exception: Fail: There are [] courses
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.956 s - in testRunners.RunCukesTest

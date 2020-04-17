@@ -1,5 +1,6 @@
 PageFactory/HomePage.class
 Utilities/ScenarioManager.class
+Utilities/ConfigFileReader.class
 PageFactory/SignUpPage.class
 PageFactory/CourseSearchPage.class
 Utilities/AutomationContext.class

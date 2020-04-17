@@ -28,6 +28,14 @@ public class CourseSearchPage {
     @FindBy(how = How.XPATH, using = "//img[@class='course-box-image']")
     public static List<WebElement> courses;
 
+    @FindBy(how = How.XPATH, using = "//div[contains(@class, 'navbar-header-courses')]//img[@alt=\"Let's Kode It\"]")
+    public static WebElement courseHomeImg;
+
+    @FindBy(how=How.XPATH, using="//div[contains(@class, 'course-block')]/div[@class='container']/h2")
+    public static WebElement courseHeader;
+
+
+
 }
 
 

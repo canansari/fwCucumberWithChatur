@@ -32,9 +32,13 @@ public class PracticePage {
     @FindBy(how=How.XPATH, using="//iframe[@src='https://learn.letskodeit.com/courses']")
     public static WebElement iframeExample;
 
+    @FindBy(how=How.ID, using="openwindow")
+    public static WebElement openWindow;
 
+    @FindBy(how=How.ID, using="mousehover")
+    public static WebElement mouseHover;
 
-
-
+    @FindBy(how=How.XPATH, using="//div[@class='mouse-hover-content']/a[1]")
+    public static WebElement hover1;
 
 }

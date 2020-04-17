@@ -1,13 +1,13 @@
 [
   {
-    "line": 4,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-14T21:49:15.819Z",
+        "start_timestamp": "2020-04-17T00:08:34.640Z",
         "before": [
           {
             "result": {
-              "duration": 2132457000,
+              "duration": 4274607000,
               "status": "passed"
             },
             "match": {
@@ -15,18 +15,18 @@
             }
           }
         ],
-        "line": 45,
-        "name": "Validate course search page",
+        "line": 4,
+        "name": "get test",
         "description": "",
-        "id": "validate-using-common-step-definitions;validate-course-search-page",
+        "id": "rest-tests;get-test",
         "after": [
           {
             "result": {
-              "duration": 101993000,
+              "duration": 102864000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.tearDown()"
+              "location": "stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -34,401 +34,43 @@
         "keyword": "Scenario",
         "steps": [
           {
+            "output": [
+              "REst service call completed with status code 200. Response json:\r\n"
+            ],
             "result": {
-              "duration": 1668075000,
+              "duration": 1110551000,
               "status": "passed"
             },
-            "line": 46,
-            "name": "I navigate to \"https://learn.letskodeit.com/\" url",
+            "line": 5,
+            "name": "I verify getService has status 200 on \"http://restapi.demoqa.com/utilities.weather/cith/Dallas\" and validate response",
             "match": {
               "arguments": [
                 {
-                  "val": "https://learn.letskodeit.com/",
-                  "offset": 15
+                  "val": "200",
+                  "offset": 31
+                },
+                {
+                  "val": "http://restapi.demoqa.com/utilities.weather/cith/Dallas",
+                  "offset": 39
                 }
               ],
-              "location": "stepDefs.NavigationStepDefs.i_navigate_to_url(java.lang.String)"
+              "location": "stepDefs.RestStepDefs.i_validate_rest_service(int,java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 18822000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "I am on the  HomePage page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "HomePage",
-                  "offset": 13
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67717000,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "I click on practiceBtn",
-            "match": {
-              "arguments": [
-                {
-                  "val": "practiceBtn",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5005152000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "I wait for 5000 miliseconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5000",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1651000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I am on the  PracticePage page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "PracticePage",
-                  "offset": 13
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 42091000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I switch to iframeExample iframe",
-            "match": {
-              "arguments": [
-                {
-                  "val": "iframeExample",
-                  "offset": 12
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_switch_to_frame(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8588000,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I am on the  CourseSearchPage page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "CourseSearchPage",
-                  "offset": 13
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_am_on_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 96440000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "I click on category",
-            "match": {
-              "arguments": [
-                {
-                  "val": "category",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1007536000,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "I click on softwareTesting",
-            "match": {
-              "arguments": [
-                {
-                  "val": "softwareTesting",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3005146000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "I wait for 3000 miliseconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3000",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "output": [
-              "Pass: There are 6 courses"
-            ],
-            "result": {
-              "duration": 101652000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "I validate courses has 6 elements and print src",
-            "match": {
-              "arguments": [
-                {
-                  "val": "courses",
-                  "offset": 11
-                },
-                {
-                  "val": "6",
-                  "offset": 23
-                },
-                {
-                  "val": "src",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 71198000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "I click on author",
-            "match": {
-              "arguments": [
-                {
-                  "val": "author",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 911899000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "I click on letsKodeIt",
-            "match": {
-              "arguments": [
-                {
-                  "val": "letsKodeIt",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "output": [
-              "Pass: There are 11 courses"
-            ],
-            "result": {
-              "duration": 124846000,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "I validate courses has 11 elements and print src",
-            "match": {
-              "arguments": [
-                {
-                  "val": "courses",
-                  "offset": 11
-                },
-                {
-                  "val": "11",
-                  "offset": 23
-                },
-                {
-                  "val": "src",
-                  "offset": 45
-                }
-              ],
-              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3000482000,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "I wait for 3000 miliseconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3000",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 264227000,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "I enter \"phyton\" in searchCourses",
-            "match": {
-              "arguments": [
-                {
-                  "val": "phyton",
-                  "offset": 9
-                },
-                {
-                  "val": "searchCourses",
-                  "offset": 20
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_enter_given_value(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 766439000,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "I click on search",
-            "match": {
-              "arguments": [
-                {
-                  "val": "search",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.CommonStepDefs.i_click_on_button(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3001281000,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I wait for 3000 miliseconds",
-            "match": {
-              "arguments": [
-                {
-                  "val": "3000",
-                  "offset": 11
-                }
-              ],
-              "location": "stepDefs.NavigationStepDefs.i_wait(long)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "output": [
-              "Fail: There are [] courses"
-            ],
-            "result": {
-              "error_message": "java.lang.Exception: Fail: There are [] courses\n\tat stepDefs.ValidationStepDefs.i_validate_list(ValidationStepDefs.java:62)\n\tat ✽.I validate courses has 5 elements and print src(classpath:features/commonFeature.feature:64)\n",
-              "duration": 34212000,
-              "status": "failed"
-            },
-            "line": 64,
-            "name": "I validate courses has 5 elements and print src",
-            "match": {
-              "arguments": [
-                {
-                  "val": "courses",
-                  "offset": 11
-                },
-                {
-                  "val": "5",
-                  "offset": 23
-                },
-                {
-                  "val": "src",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefs.ValidationStepDefs.i_validate_list(java.lang.String,int,java.lang.String)"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@regression"
-          },
-          {
-            "name": "@coursesearchpage"
+            "name": "@gettest"
           }
         ]
       }
     ],
-    "name": "validate using common step definitions",
+    "name": "Rest Tests",
     "description": "",
-    "id": "validate-using-common-step-definitions",
+    "id": "rest-tests",
     "keyword": "Feature",
-    "uri": "classpath:features/commonFeature.feature",
+    "uri": "classpath:features/RestTests.feature",
     "tags": []
   }
 ]
