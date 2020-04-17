@@ -12,7 +12,7 @@ public class WebElementMgr {
         Class<?> validationClass=pageObj.getClass();
         Field[] fields=validationClass.getDeclaredFields();
         for(Field field: fields){
-            if(field.getType()==WebElement.class || field.getType()== List.class){
+            if(field.getType() == WebElement.class || field.getType() == List.class){
                 field.setAccessible(true);
                 if (field.getName().equals(elementNm)) {
 
