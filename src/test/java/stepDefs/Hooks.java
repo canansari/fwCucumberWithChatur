@@ -22,24 +22,25 @@ public class Hooks {
     @Before
     public void set(Scenario scenario){
         Driver.setBrowserNmVersion(context.getConfigFileReader().getPropertyValue("browser"), context.getConfigFileReader().getPropertyValue("browserVersion"));
-        if(platform.equalsIgnoreCase("web")){
-
+        if(platform.equalsIgnoreCase("web")) {
+            Driver.initializeDriver();
+            Driver.getDriver().manage().window().maximize();
         }
-        Driver.initializeDriver();
         context.getScenarioManager().setScenario(scenario);
-        Driver.getDriver().manage().window().maximize();
+
 
     }
 
     @After
-    public void tearDown(Scenario scenario){
-        if(scenario.isFailed()){
-            byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/jpeg", "failure_image");
+    public void tearDown(Scenario scenario) {
+        if (platform.equalsIgnoreCase("web")) {
+            if (scenario.isFailed()) {
+                byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenshot, "image/jpeg", "failure_image");
+            }
+
+            Driver.getDriver().quit();
         }
 
-        Driver.getDriver().quit();
     }
-
-
 }

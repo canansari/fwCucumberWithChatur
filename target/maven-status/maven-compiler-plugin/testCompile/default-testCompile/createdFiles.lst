@@ -4,3 +4,4 @@ stepDefs/CommonStepDefs.class
 stepDefs/Hooks.class
 stepDefs/RestStepDefs.class
 testRunners/RunCukesTest.class
+stepDefs/CustomStepDefs.class

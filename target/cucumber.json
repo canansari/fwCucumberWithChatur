@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-17T00:08:34.640Z",
+        "start_timestamp": "2020-04-19T22:38:14.658Z",
         "before": [
           {
             "result": {
-              "duration": 4274607000,
+              "duration": 9666000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "get test",
+        "line": 30,
+        "name": "post test",
         "description": "",
-        "id": "rest-tests;get-test",
+        "id": "rest-tests;post-test",
         "after": [
           {
             "result": {
-              "duration": 102864000,
+              "duration": 74000,
               "status": "passed"
             },
             "match": {
@@ -34,34 +34,182 @@
         "keyword": "Scenario",
         "steps": [
           {
-            "output": [
-              "REst service call completed with status code 200. Response json:\r\n"
-            ],
             "result": {
-              "duration": 1110551000,
+              "duration": 2327000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I verify getService has status 200 on \"http://restapi.demoqa.com/utilities.weather/cith/Dallas\" and validate response",
+            "line": 32,
+            "name": "I store parameters in postPath map",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 31
-                },
-                {
-                  "val": "http://restapi.demoqa.com/utilities.weather/cith/Dallas",
-                  "offset": 39
+                  "val": "postPath",
+                  "offset": 22
                 }
               ],
-              "location": "stepDefs.RestStepDefs.i_validate_rest_service(int,java.lang.String)"
+              "location": "stepDefs.RestStepDefs.i_store_map(java.lang.String,java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "action",
+                  "register"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I store parameters in postBody map",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postBody",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefs.RestStepDefs.i_store_map(java.lang.String,java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "testfir1"
+                ]
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "testlast2"
+                ]
+              },
+              {
+                "cells": [
+                  "UserName",
+                  "fwuser2"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "pass2"
+                ]
+              },
+              {
+                "cells": [
+                  "Email",
+                  "so@me.com"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Rest service call completed with status code 200. Response json:\r\n{\n    \"FaultId\": \"User already exists\",\n    \"fault\": \"FAULT_USER_ALREADY_EXISTS\"\n}"
+            ],
+            "result": {
+              "duration": 1311861000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I verify postService for \"postapp\" has status 200 on \"post.url\" with header params \"\", path params \"postPath\", query params \"\", form params \"\",auth \"\", body \"postBody\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "post",
+                  "offset": 9
+                },
+                {
+                  "val": "postapp",
+                  "offset": 26
+                },
+                {
+                  "val": "200",
+                  "offset": 46
+                },
+                {
+                  "val": "post.url",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 84
+                },
+                {
+                  "val": "postPath",
+                  "offset": 100
+                },
+                {
+                  "val": "",
+                  "offset": 125
+                },
+                {
+                  "val": "",
+                  "offset": 141
+                },
+                {
+                  "val": "",
+                  "offset": 149
+                },
+                {
+                  "val": "postBody",
+                  "offset": 158
+                }
+              ],
+              "location": "stepDefs.RestStepDefs.i_validate_rest_service(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
+          },
+          {
+            "output": [
+              "Fail; Expected User already exist; FoundFaultId : User already exists",
+              "Pass; Foundfault : FAULT_USER_ALREADY_EXISTS"
+            ],
+            "result": {
+              "error_message": "java.lang.Exception: Fail. Check outputs below for details.\n\tat stepDefs.RestStepDefs.i_verify_rest_response(RestStepDefs.java:98)\n\tat ✽.I verify rest response data for postapp(classpath:features/RestTests.feature:42)\n",
+              "duration": 386740000,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "I verify rest response data for postapp",
+            "match": {
+              "arguments": [
+                {
+                  "val": "postapp",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefs.RestStepDefs.i_verify_rest_response(java.lang.String,java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FaultId",
+                  "User already exist"
+                ]
+              },
+              {
+                "cells": [
+                  "fault",
+                  "FAULT_USER_ALREADY_EXISTS"
+                ]
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@gettest"
+            "name": "@rest"
+          },
+          {
+            "name": "@posttest200"
           }
         ]
       }

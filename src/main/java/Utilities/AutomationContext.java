@@ -1,8 +1,11 @@
 package Utilities;
 
+import io.restassured.response.Response;
 import managers.PageObjectMgr;
 import org.apache.commons.lang3.StringUtils;
 
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,19 +13,35 @@ public class AutomationContext {
     PageObjectMgr pageObjectMgr;
     ScenarioManager scenarioManager;
     ConfigFileReader configFileReader;
-
     private Map<String, String> contextCache=new HashMap<>();
-    private HashMap<String, HashMap<String ,String>> cacheParamMap=new HashMap<>();
+    private HashMap<String, Map<String, String>> cacheParamMap=new HashMap<>();
+    private HashMap<String, Response> responseHashMap=new HashMap<>();
 
-    public HashMap<String, HashMap<String, String>> getCacheParamMap() {
-        return cacheParamMap;
+    public void setResponseHashMap(String key, Response response){
+        responseHashMap.put(key, response);
+    }
+    public Response getResponseHashMap(String key){
+        return responseHashMap.get(key);
+    }
+    public Map<String, String> getCacheParamMap(String key) {
+        return cacheParamMap.get(key);
     }
 
-    public void setCacheParamMap(HashMap<String, HashMap<String, String>> cacheParamMap) {
+    public void setCacheParamMap(String key, Map<String, String> paramsMap) {
         this.cacheParamMap.put(key, paramsMap);
     }
 
 
+
+    public ArrayList<HashMap<String, String>> getHashMapDataCache(String key) {
+        return hashMapDataCache.get(key);
+    }
+
+    public void setHashMapDataCache(String key, ArrayList<HashMap<String, String>> hashMaps) {
+        hashMapDataCache.put(key, hashMaps);
+    }
+
+    private HashMap<String, ArrayList<HashMap<String, String>>> hashMapDataCache=new HashMap<>();
 
     public AutomationContext(ScenarioManager scenarioManager){
         pageObjectMgr =new PageObjectMgr();

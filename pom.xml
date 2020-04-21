@@ -32,10 +32,24 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>4.3.0</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
@@ -45,17 +59,26 @@
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
+            <!--
+            Provides pretty html reports for cucumber. IT first parses (reads)the cucumber .json file and then generated nice HTML report.
+            Along with masterthought maven sure file plugin is also required to create HTML reports.
+            They work together.
+            -->
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>3.5.0</version>
                 <executions>
+                    <!--  There can be many executions and each one has an ID. This particular one is "test execution" -->
                     <execution>
                         <id>test-Execution</id>
+                        <!-- Genenrate reports when ran by this "mvn verify"command if ran by "mvn test" reports won't be generated -->
                         <phase>verify</phase>
+                        <!-- Defines how build phases are carried out. ?Usually goals is set to "genrate" -->
                         <goals>
                             <goal>generate</goal>
                         </goals>
+                        <!-- Set project name, and where the reports should be generated -->
                         <configuration>
                             <projectName>${project.artifactId}</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
@@ -64,6 +87,13 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--
+             The Surefire Plugin is used during the test phase of the build lifecycle to execute the unit tests of an application.
+             It generates reports in two different file formats: Plain text files (*.txt) and XML files (*.xml)
+             By default, these files are generated in ${basedir}/target/surefire-reports/TEST-*.xml.
+             We can also configure it to ignore failed tests so that maven build can success
+             Surefire plugin is also used to sequence tests and run tests in parallel.
+             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -73,10 +103,15 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <!-- Default cucumber plugin that prevents IDE from switching to lower versions of java or maven -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
+                <!--
+                Maven build fill fail if a test fails and won't generate a report. Configuring as below so that maven build does
+                not fail when a test fails
+                -->
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>

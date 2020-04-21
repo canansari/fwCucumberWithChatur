@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>fwtest</td>
               <td>1</td>
-            <td>16 Apr 2020, 18:08</td>
+            <td>19 Apr 2020, 16:38</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Rest Tests</td>
-                    <td      class="passed"    >1</td>
+                    <td      class="passed"    >3</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
+          <td class="total">4</td>
+
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td  class="passed"    >1</td>
-          <td >0</td>
-          <td class="total">1</td>
-
-          <td class="duration" data-value="1110551000">1s 110ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1701188000">1s 701ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Rest Tests</span>
   
@@ -189,15 +189,16 @@ $(document).ready(function() {
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_gettest.html">@gettest</a>
+           <a href="report-tag_rest.html">@rest</a>
+           <a href="report-tag_posttest200.html">@posttest200</a>
       </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">get test</span>
+  <span class="name">post test</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -206,7 +207,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -227,7 +228,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDefs.Hooks.set(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">4s 274ms</span>
+  <span class="lead-duration duration">009ms</span>
 
           </div>
 
@@ -243,9 +244,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -255,14 +256,84 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I verify getService has status 200 on &quot;http://restapi.demoqa.com/utilities.weather/cith/Dallas&quot; and validate response</span>
+  <span class="name">I store parameters in postPath map</span>
   
-  <span class="lead-duration duration">1s 110ms</span>
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>action</td>
+                                  <td>register</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I store parameters in postBody map</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>FirstName</td>
+                                  <td>testfir1</td>
+                              </tr>
+                          <tr>
+                                  <td>LastName</td>
+                                  <td>testlast2</td>
+                              </tr>
+                          <tr>
+                                  <td>UserName</td>
+                                  <td>fwuser2</td>
+                              </tr>
+                          <tr>
+                                  <td>Password</td>
+                                  <td>pass2</td>
+                              </tr>
+                          <tr>
+                                  <td>Email</td>
+                                  <td>so@me.com</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I verify postService for &quot;postapp&quot; has status 200 on &quot;post.url&quot; with header params &quot;&quot;, path params &quot;postPath&quot;, query params &quot;&quot;, form params &quot;&quot;,auth &quot;&quot;, body &quot;postBody&quot;</span>
+  
+  <span class="lead-duration duration">1s 311ms</span>
 
   </div>
 
@@ -279,8 +350,74 @@ $(document).ready(function() {
                     <a>Output 1</a>
         </div>
         <div id="msg-4" class="collapse collapsable-details">
-          <pre>REst service call completed with status code 200. Response json:
+          <pre>Rest service call completed with status code 200. Response json:
+{
+    &quot;FaultId&quot;: &quot;User already exists&quot;,
+    &quot;fault&quot;: &quot;FAULT_USER_ALREADY_EXISTS&quot;
+}</pre>
+        </div>
+      </div>
+      </div>
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I verify rest response data for postapp</span>
+  
+  <span class="lead-duration duration">386ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>java.lang.Exception: Fail. Check outputs below for details.
+	at stepDefs.RestStepDefs.i_verify_rest_response(RestStepDefs.java:98)
+	at &#10045;.I verify rest response data for postapp(classpath:features/RestTests.feature:42)
 </pre>
+      </div>
+    </div>
+  </div>
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>FaultId</td>
+                                  <td>User already exist</td>
+                              </tr>
+                          <tr>
+                                  <td>fault</td>
+                                  <td>FAULT_USER_ALREADY_EXISTS</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-6" class="collapse collapsable-details">
+          <pre>Fail; Expected User already exist; FoundFaultId : User already exists</pre>
+        </div>
+      </div>
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+                    <a>Output 2</a>
+        </div>
+        <div id="msg-7" class="collapse collapsable-details">
+          <pre>Pass; Foundfault : FAULT_USER_ALREADY_EXISTS</pre>
         </div>
       </div>
       </div>
@@ -294,7 +431,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -306,13 +443,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDefs.Hooks.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">102ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
