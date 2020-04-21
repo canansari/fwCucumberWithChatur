@@ -3,6 +3,7 @@ Utilities/ScenarioManager.class
 Utilities/ConfigFileReader.class
 PageFactory/SignUpPage.class
 PageFactory/CourseSearchPage.class
+Utilities/ExcelHelper.class
 Utilities/AutomationContext.class
 managers/Driver.class
 Utilities/WebElementMgr.class

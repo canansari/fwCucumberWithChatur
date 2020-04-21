@@ -126,6 +126,14 @@ Feature: validate using common step definitions
     Given I enter "actual user" in userName
     Then I wait for 5000 miliseconds
 
+  @exceldata
+  Scenario: validate with excel
+    Given I navigate to "kodeit.url" url
+    Then I am on the  HomePage page
+    Then I click on enrollNow
+    Then I am on the  SignUpPage page
+    Given I read excel file "ExcelDataChatur" and store
+    Then I validate signup page fields using "ExcelDataChatur"
 
 
 

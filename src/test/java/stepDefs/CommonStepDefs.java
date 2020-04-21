@@ -1,6 +1,7 @@
 package stepDefs;
 
 import Utilities.AutomationContext;
+import Utilities.ExcelHelper;
 import Utilities.WebElementMgr;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -70,6 +71,13 @@ public class CommonStepDefs {
 
     }
 
+    /**
+     * Step stores a given element's attribute/text in a cache key
+     * @param elementNm
+     * @param attr
+     * @param key
+     */
+
     @Then("^I store (\\w+) (\\w+) in \"(.*)\"$")
     public void i_store_given_value(String elementNm, String attr, String key) {
         WebElement storeElement= (WebElement)WebElementMgr.getWebElement(context.getPageObjectMgr().getCurrentPage(), elementNm);
@@ -80,8 +88,10 @@ public class CommonStepDefs {
 
     }
 
-    @Then("^I read excel file and store")
-    public void i_read_excel(){
+    @Then("^I read excel file \"(.*)\" and store$")
+    public void i_read_excel(String fileNm){
+        context.setHashMapDataCache(fileNm,ExcelHelper.readExcelInput(fileNm));
+        context.getScenarioManager().getScenario().write("excel data: "+context.getHashMapDataCache(fileNm));
 
     }
 }
